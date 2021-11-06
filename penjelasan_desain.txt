@@ -1,0 +1,27 @@
+dim_bayar
+mengambil tanggal pembayaran (date) di tabel payment untuk mengetahui tanggal pembayarannya
+mengambil harga (amount) di tabel payment untuk mengetahui harganya
+mengambil nama (name) di tabel customers untuk mengetahui nama customernya, dijoinkan antara tabel payment dan tabel customers
+mengambil id customer (customer_number) di tabel payment untuk mengetahui id customer
+
+
+dim_order
+mengambil tanggal order (date) di tabel order untuk mengetabui tanggal order customer
+mengambil tanggal pengiriman (date) di tabel order untuk mengetahui tanggal pengiriman kendaraan
+mengambil antrian pengiriman (line) di tabel orderdetails untuk mengetahui urutan pengiriman kendaraan, dijoinkan antara tabel order dan tabel orderdetails
+mengambil status pengiriman (status) di tabel order untuk mengetahui status pengiriman kendaraan
+menganbil id order (order_number) di tabel order untuk mengetahui id order kendaraan
+
+
+dim_produk
+mengambil nama (name) di tabel produk untuk mengetahui nama kendaraannya
+mengambil vendor (vendor) di tabel produk untuk mengetahui nama brand kendaraannya
+mengambil deskripsi (deskripsi) di tabel produk untuk mengetahui deskripsi dari kendaraan
+mengambil iklan (iklan) di tabel produkline untuk mengetahui deskripsi penawaran kendaraan, dijoinkan antara tabel produk dan tabel produkline
+mengambil id produk (produk_code) di tabel produk untuk mengetahui id dari brand kendaraan
+
+
+fakta_retail
+mengambil sk_customer dari tabel dim_bayar, membuat querynya agar dapat diakses tabel dim_bayar
+mengambil sk_order dari tabel dim_order,  membuat querynya agar dapat diakses tabel dim_order
+mengambil sk_produk dari tabel dim_produk, membuat querynya agar dapat diakses tabel dim_produk
